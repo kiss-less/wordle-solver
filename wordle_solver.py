@@ -44,7 +44,7 @@ while True:
 
     for item in data:    
         for i in range(0,5):
-            if (word_in_progress[i][0] == "с" and word_in_progress[i][1] in item and (not f"ж{word_in_progress[i][1]}" in word_in_progress or not f"з{word_in_progress[i][1]}" in word_in_progress)):
+            if (word_in_progress[i][0] == "с" and word_in_progress[i][1] in item and (not f"ж{word_in_progress[i][1]}" in word_in_progress and not f"з{word_in_progress[i][1]}" in word_in_progress)):
                 data[item] = False
             if (word_in_progress[i][0] == "з" and word_in_progress[i][1] != item[i]):
                 data[item] = False
